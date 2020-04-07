@@ -4,6 +4,7 @@ LABEL com.circleci.preserve-entrypoint=true
 RUN apt update -y && \
     apt install -q -y libx11-dev libgl1-mesa-dev \
     libglfw3 libxi-dev libxrandr-dev libxcursor-dev \
+    libxinerama-dev \
     git ssh tar gzip ca-certificates
 RUN rm -rf /var/lib/apt/lists/*
 
