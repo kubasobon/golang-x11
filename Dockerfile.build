@@ -1,0 +1,8 @@
+FROM wttyf00l/golang-x11:circleci
+LABEL com.circleci.preserve-entrypoint=true
+
+RUN mkdir -p /opt/repo
+WORKDIR /opt/repo
+COPY . .
+
+ENTRYPOINT ["go build -v ."]
