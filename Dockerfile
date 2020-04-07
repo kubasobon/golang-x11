@@ -10,5 +10,5 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /opt/repo
 WORKDIR /opt/repo
 
-ENTRYPOINT ["/bin/sh", "-c", "'sleep 3600'"]
+ENTRYPOINT ["/bin/sh", "-c", "sleep 3600"]
 
